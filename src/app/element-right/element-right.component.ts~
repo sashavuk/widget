@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import {DataForWidget } from '../data-for-widget';
 
 @Component({
-  selector: 'app-element-right',
+  selector: 'element-right',
   templateUrl: './element-right.component.html',
   styleUrls: ['./element-right.component.css']
 })
 export class ElementRightComponent implements OnInit {
-
-  constructor() { }
+  private my_temp;
+  constructor(private dataforwidget:DataForWidget) {
+    this.my_temp = dataforwidget.temp_to_send;
+    this.my_water= dataforwidget.water_to_send;
+    this.my_followers= dataforwidget.followers_to_send;
+    this.my_following= dataforwidget.following_to_send;
+  }
 
   ngOnInit() {
   }

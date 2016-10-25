@@ -21,7 +21,7 @@ import {DataForWidget} from './data-for-widget';
     FormsModule,
     HttpModule
   ],
-  providers: [DataForWidget],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

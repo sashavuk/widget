@@ -10,6 +10,7 @@
 	<h3>Righteous indignation & like</h3>
 	 <span class="line"> </span>
 </div>
+<div class="activity_box">
  <div class="activity-row">
          <div class="activity-desc">
          	<h5>Resort Address</h5>
@@ -24,4 +25,5 @@
          	</ul>
          	</div>
          <div class="clear"> </div>
+  </div>
 </div>

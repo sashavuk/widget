@@ -1,0 +1,11 @@
+export class DataForWidget {
+//	public data = {
+//		"tel":"+123 45 67"
+//	}
+public tel_to_send:string = "12345";
+public temp_to_send:string = "+20";
+public water:string = "+25";
+public followers:number = 2850;
+public following:number = 675;
+
+}

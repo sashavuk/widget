@@ -1,14 +1,17 @@
 <div class="ele-strip">
 	<ul>
-		<li><a href="#">Hotel</a></li>
-		<li><a href="#">Fishing</a></li>
-		<li><a href="#">Tours</a></li>
+		<li *ngFor = "let my_place of my_places"><a href="#">{{my_place}}</a></li>
+		<!--<li><a href="#">Fishing</a></li>
+		<li><a href="#">Tours</a></li>-->
 		<li class="anc-bor"><a href="#">Weather</a></li>
 	</ul>
 </div>
  <div class="village">
-	<h3>Righteous indignation & like</h3>
+	<h3>Select hotels from the list:</h3>
 	 <span class="line"> </span>
+	 <select (ngModelChange) = onSelectedChange($event)>
+		 <option *ngFor = 'let my_hotel of my_hotels'[value] = 'my_hotel'>{{my_hotel}}</option>
+	 </select>
 </div>
 <div class="activity_box">
  <div class="activity-row">
@@ -16,7 +19,7 @@
          	<h5>Resort Address</h5>
             <p>Sed perspiciatis</p>
             <p>Et harum quidem</p>
-           <h6>Tel:+1285 968 685</h6>
+			<h6>Tel:{{my_tel}}</h6>
          </div>
          <div class="activity-img">
            <ul>

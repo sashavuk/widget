@@ -8,16 +8,15 @@ import {DataForWidget } from '../data-for-widget';
 })
 export class ElementLeftBottomComponent implements OnInit {
 	private my_tel;
-	//private data;
-
+	private my_places:string[] = ['Hotel','Fishing','Tours'];
+	private my_hotels:string[] = ['Hotel One','Hotel Two','Hotel Three'];
   constructor(private dataforwidget:DataForWidget) {
-	   // this.data = data;
-	//	this.my_tel = data.tel;
-  //console.info(' dataforwidget = ',dataforwidget.tel_to_send)
-  this.my_tel = dataforwidget.tel_to_send; 	
 	
+  this.my_tel = dataforwidget.tel_to_send;	
   }
-
+  onSelectedChange(event){
+	console.info('event = ', event);
+  }
 
   ngOnInit() {
   }

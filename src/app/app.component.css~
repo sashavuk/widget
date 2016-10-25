@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin: 3em 0em 2em 0em;
+  font-family: 'Quicksand', sans-serif;
+}
+.element {
+  width: 80%;
+  margin: 0 auto 7em;
+  border:2px dashed white;
+  
+}
+.element-right {
+  float: right;
+   width: 45%;
+     border:2px dotted white;
+	  color:#fff;
+}
+
+.element-left {
+  float: left;
+  width:50%;
+   border:2px dotted white;
+   color:#fff;
+}

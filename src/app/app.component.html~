@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+<div class="element">
+	<div class = "element-left">
+	<element-left ></element-left>
+	</div>
+	<div class = "element-right">
+	<element-left ></element-right>
+	</div>
+</div>

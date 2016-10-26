@@ -1,9 +1,6 @@
 <div class="ele-strip">
 	<ul>
 		<li *ngFor = "let my_place of my_places"><a href="#">{{my_place}}</a></li>
-		<!--<li><a href="#">Fishing</a></li>
-		<li><a href="#">Tours</a></li>-->
-		<li class="anc-bor"><a href="#">Weather</a></li>
 	</ul>
 </div>
  <div class="village">
@@ -16,9 +13,9 @@
 <div class="activity_box">
  <div class="activity-row">
          <div class="activity-desc">
-         	<h5>Resort Address</h5>
-            <p>Sed perspiciatis</p>
-            <p>Et harum quidem</p>
+			 <h5>{{resortName}}</h5>
+			 <p>{{Address1}}</p>
+			 <p>{{Address2}}</p>
 			<h6>Tel:{{my_tel}}</h6>
          </div>
          <div class="activity-img">

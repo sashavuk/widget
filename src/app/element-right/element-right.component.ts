@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataForWidget } from '../data-for-widget';
+import {TextDegreePipe } from '../text-degree.pipe';
 
 @Component({
   selector: 'element-right',

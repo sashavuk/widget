@@ -8,7 +8,10 @@ import {DataForWidget } from '../data-for-widget';
 })
 export class ElementRightComponent implements OnInit {
   private my_temp;
-  constructor(private dataforwidget:DataForWidget) {
+			private my_water;
+			private my_followers;
+			private my_following;
+   constructor(private dataforwidget:DataForWidget) {
     this.my_temp = dataforwidget.temp_to_send;
     this.my_water= dataforwidget.water_to_send;
     this.my_followers= dataforwidget.followers_to_send;

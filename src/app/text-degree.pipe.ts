@@ -1,0 +1,12 @@
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'textDegree'
+})
+export class TextDegreePipe implements PipeTransform {
+
+  transform(value: any, args?: any): any {
+    return value + ' градус(ов)';
+  }
+
+}
